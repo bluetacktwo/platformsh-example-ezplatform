@@ -44,7 +44,7 @@ hooks:
         app/console --env=prod assetic:dump
     deploy: |
         set -e
-        if [ $PLATFORM_ENVIRONMENT = "master" ] && [ ! -f web/var/.platform.installed ]; then
+        if [ ! -f web/var/.platform.installed ]; then
             php -d memory_limit=-1 app/console ezplatform:install --env prod demo
             touch web/var/.platform.installed
         fi
