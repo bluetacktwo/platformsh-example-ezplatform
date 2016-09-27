@@ -41,7 +41,7 @@ stash:
                 # When using multiple webservers, you must use Memcache or Redis to share the cache
                 # For single web server Apc, Memcached and Redis will give you better performance under editing load
                 - FileSystem
-            inMemory: false
+            inMemory: true
             registerDoctrineAdapter: false
             # On Windows, using FileSystem, to avoid hitting filesystem limitations
             # you need to change the keyHashFunction used to generate cache directories to "crc32"
