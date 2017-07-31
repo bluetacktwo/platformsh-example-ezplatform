@@ -1,6 +1,6 @@
-# EZ Platform project template for Platform.sh
+# eZ Platform project template for Platform.sh
 
-This project provides a starter kit for EZ Platform projects hosted on [Platform.sh](http://platform.sh).  There are only very minor changes from vanilla EZ Platform.
+This project provides a starter kit for eZ Platform projects hosted on [Platform.sh](http://platform.sh).  There are only very minor changes from vanilla eZ Platform.
 
 ## Starting a new project
 
@@ -12,11 +12,11 @@ To start a new Symfony 3 project on Platform.sh, you have 2 options:
 
 ## Using as a reference
 
-You can use this repository as a reference for your own EZ Platform projects, and borrow whatever code is needed.  The most important parts are the [`.platform.app.yaml`](/.platform.app.yaml) file and the [`.platform`](/.platform) directory.
+You can use this repository as a reference for your own eZ Platform projects, and borrow whatever code is needed.  The most important parts are the [`.platform.app.yaml`](/.platform.app.yaml) file and the [`.platform`](/.platform) directory.
 
 Also see:
 
 * [`config.yml`](/app/config/config.yaml) - At the top of this file in the `imports` section, a new resource is added named `env/platform.php`.  That will load a PHP file rather than YAML file to specify Symfony configuration parameters.  Also note toward the bottom that the Doctrine DBAL server version is specified explicitly.  That is required to work around an issue where Doctrine will try to connect to the database during the build process to determine the server version, even though it doesn't need it.
 * [`platform.php`](/app/config/env/parameters_platform.php) - This file contains Platfom.sh-specific code to map environment variables into Symfony parameters.  This file will be parsed on every page load.  By default it only maps a default database connection to Container parameters expected by Doctrine.  You can add to it as needed.
 
-That's all you need to make an EZ Platform application run on Platform.sh!
+That's all you need to make an eZ Platform application run on Platform.sh!
