@@ -75,18 +75,22 @@ ezpublish:
                 - fre-FR
                 - ger-DE
                 - nor-NO
+            cache_service_name: '%cache_pool%'
         fr:
             languages:
                 - fre-FR
                 - eng-GB
+            cache_service_name: '%cache_pool%'
         de:
             languages:
                 - ger-DE
                 - eng-GB
+            cache_service_name: '%cache_pool%'
         no:
             languages:
                 - nor-NO
                 - eng-GB
+            cache_service_name: '%cache_pool%'
 
 ezdesign:
     design_list:
